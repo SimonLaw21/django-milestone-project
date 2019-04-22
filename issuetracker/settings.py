@@ -12,9 +12,11 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 
 import os, sys
 import dj_database_url
+import django
 from os.path import join, dirname
 from dotenv import load_dotenv
 
+django.setup()
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -27,14 +29,14 @@ load_dotenv(dotenv_path)
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.getenv('SECRET_KEY')
+SECRET_KEY = '!67qj^u8^zeafsz1evyid1!04pi8mt&e^o5v*(m+t*n&1_%20='
 
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1','django-milestone-project.herokuapp.com']
+ALLOWED_HOSTS = ['127.0.0.1','django-milestone-project.herokuapp.com', 'django-milestone-project-simonlaw.c9users.io/']
 
 
 # Application definition
@@ -92,24 +94,24 @@ WSGI_APPLICATION = 'issuetracker.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
-#if 'test' in sys.argv:
-#    DATABASES = {
-#        'default': {
-#            'ENGINE': 'django.db.backends.sqlite3',
-#            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#        },
-#    }
+if 'test' in sys.argv:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        },
+    }
 
-#elif "DATABASE_URL" in os.environ:
-DATABASES = {'default': dj_database_url.parse('postgres://tyfpaokpcqnerf:4706252804289b0005e5c1cada78921d5c16bfb36c836e5014173902748b40d5@ec2-54-246-92-116.eu-west-1.compute.amazonaws.com:5432/d729h3si11o3b4') }
-#else:
-#    print("Database URL not found. Using SQLite instead")
-#    DATABASES = {
-#        'default': {
-#            'ENGINE': 'django.db.backends.sqlite3',
-#            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#        },
-#    }
+elif "DATABASE_URL" in os.environ:
+    DATABASES = {'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))}
+else:
+    print("Database URL not found. Using SQLite instead")
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        },
+    }
 
 
 # Password validation
