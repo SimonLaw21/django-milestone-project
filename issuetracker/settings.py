@@ -101,7 +101,7 @@ WSGI_APPLICATION = 'issuetracker.wsgi.application'
 #    }
 
 #elif "DATABASE_URL" in os.environ:
-DATABASES = {'default': dj_database_url.parse('postgres://nvkoqzzdonmlap:631550e0e8af8d512f7792d37195812f63c4622e54460025a97740468c09cfe4@ec2-79-125-2-142.eu-west-1.compute.amazonaws.com:5432/davo1c1j8umpiv') }
+DATABASES = {'default': dj_database_url.parse('postgres://tyfpaokpcqnerf:4706252804289b0005e5c1cada78921d5c16bfb36c836e5014173902748b40d5@ec2-54-246-92-116.eu-west-1.compute.amazonaws.com:5432/d729h3si11o3b4') }
 #else:
 #    print("Database URL not found. Using SQLite instead")
 #    DATABASES = {
