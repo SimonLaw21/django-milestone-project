@@ -3,7 +3,7 @@
 {% block content %}
   <form method="get">
     {{ filter.form.as_p }}
-    <button class="btn waves-effect waves-light"  type="submit"><i class="material-icons right">search</i>Filter</button>
+    <button class="btn waves-effect waves-light btn-color"  type="submit"><i class="material-icons right">search</i>Filter</button>
   </form>
 
   <div class="row">
@@ -15,7 +15,7 @@
             <div class="collapsible-header"><i class="material-icons">expand_more</i>{{ issue.title }}
             </div>
             <div class="collapsible-body">
-                <a class="btn-floating btn-large" href="{% url 'issue_detail' issue.id %}"><i class="material-icons">navigate_next</i></a>
+                <a class="btn-floating btn-large btn-color" href="{% url 'issue_detail' issue.id %}"><i class="material-icons">navigate_next</i></a>
                 <p><span><b>Created: </b>{{ issue.created_date }}</span></p>
                 <p><span><b>Tag: </b>{{ issue.tag }}</span></p>
                 <p><span><b>Upvotes: </b>{{ issue.upvotes }}</span></p>

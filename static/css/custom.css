@@ -9,3 +9,9 @@
       width: 80%;
     }
   }
+  
+/* Colours */
+
+.nav-color, .btn-color {
+    background-color: #7cb5ec;
+}
