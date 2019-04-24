@@ -1,0 +1,1 @@
+[![Build Status](https://travis-ci.org/SimonLaw21/django-milestone-project.svg?branch=master)](https://travis-ci.org/SimonLaw21/django-milestone-project)
