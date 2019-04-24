@@ -1,8 +1,8 @@
 .dc-chart g.row text {
-    fill: black;
+    fill: red;
 }
 
-.dc-chart text.pie-slice {fill: black;}
+.dc-chart text.pie-slice {fill: red;}
 
 @media only screen and (min-width: 993px) {
     .container {
@@ -12,6 +12,6 @@
   
 /* Colours */
 
-.nav-color, .btn-color {
+.btn-color, nav .nav-wrapper {
     background-color: #7cb5ec;
 }
