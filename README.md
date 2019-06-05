@@ -1,4 +1,4 @@
-# Simon's Cookbook
+# Issue tracker
 
 Mission statement for project: "Create a web application that allows users to add and edit/store bugs and features requests for a piece of software.""
 
