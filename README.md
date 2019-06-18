@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/SimonLaw21/django-milestone-project.svg?branch=master)](https://travis-ci.org/SimonLaw21/django-milestone-project)
+
 # Issue tracker
 
 Mission statement for project: "Create a web application that allows users to add and edit/store bugs and features requests for a piece of software.""
