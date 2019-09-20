@@ -34,7 +34,7 @@ SECRET_KEY = '!67qj^u8^zeafsz1evyid1!04pi8mt&e^o5v*(m+t*n&1_%20='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1','django-milestone-project.herokuapp.com', 'django-milestone-project-simonlaw.c9users.io']
+ALLOWED_HOSTS = ['127.0.0.1','django-milestone-project.herokuapp.com', 'django-milestone-project-simonlaw.c9users.io', '1991f48ef1394ae1ae8d54ab1bb3ebfd.vfs.cloud9.us-east-1.amazonaws.com']
 
 
 # Application definition
