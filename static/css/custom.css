@@ -28,3 +28,8 @@
 .btn-color, nav .nav-wrapper {
     background-color: #7cb5ec;
 }
+
+div nav .nav-wrapper {
+    background-color: white;
+    color: black;
+}
