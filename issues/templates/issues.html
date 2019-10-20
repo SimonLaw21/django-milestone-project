@@ -14,6 +14,9 @@
         <!-- You have <strong>{{ unread_count }}</strong> unread notifications. <a href="{% url 'my_notifications' %}"><i class="material-icons">notifications</i>My Updates</a> -->
         <p><a href="{% url 'my_notifications' %}"><span class="new badge red left">{{ unread_count }}</span></a> You have unread notifications.</p>
     {% endif %}
+    <h2>Issue Tracker</h2>
+    <p>Welcome to the company issue tracker. You can check the status of existing issues that have been raised by using the search function or the list below.
+    To create a new issue please use the <strong>"Add new issue"</strong> button at the top of the page.</p>
     <p>{{ issue_count }}</p>
     <form action="{% url 'do_search' %}" method="get">
         <input type="text" name="q" placeholder="Keyword(s)...">
