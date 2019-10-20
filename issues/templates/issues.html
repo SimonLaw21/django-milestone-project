@@ -16,7 +16,7 @@
     {% endif %}
     <p>{{ issue_count }}</p>
     <form action="{% url 'do_search' %}" method="get">
-        <input type="text" name="q">
+        <input type="text" name="q" value="Keyword(s)...">
         <button class="btn waves-effect waves-light btn-color"  type="submit"><i class="material-icons right">search</i>Search</button>
     </form>
     <ul class="collapsible popout">
