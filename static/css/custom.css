@@ -29,7 +29,7 @@
     background-color: #7cb5ec;
 }
 
-div nav div ul li a {
+div nav div ul li a, div nav .nav-wrapper {
     background-color: white !important;
     color: black !important;
 }
