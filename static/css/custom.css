@@ -29,13 +29,13 @@
     background-color: #7cb5ec;
 }
 
-div nav .nav-wrapper {
+.body-nav {
     background-color: white !important;
     color: black !important;
 }
 
 /* NO shadows */
-div nav .nav-wrapper {
-    -webkit-box-shadow: none;
-    box-shadow: none;
+.no-shadow {
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
 }

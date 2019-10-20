@@ -47,9 +47,9 @@
           </ul>
     </header>
     <div class="container">
-        <nav>
+        <nav class="no-shadow">
             <div class="col s12 nav-wrapper">
-                    <ul id="nav-mobile">
+                    <ul id="nav-mobile" class="body-nav">
                         {% if user.is_authenticated %}
                             <li><a href="{% url 'profile' %}"><i class="material-icons left">person</i>Profile</a></li>
                             <li><a href="{% url 'my_notifications' %}"><i class="material-icons left">notifications</i>My Updates</a></li>
@@ -66,22 +66,6 @@
                                     {% endif %}
                                 </a>
                             </li>
-                       <!-- {% if user.is_authenticated %}
-                            <li class="tab col s3"><a target="_self" href="{% url 'profile' %}"><i class="material-icons">person</i>Profile</a></li>
-                            <li class="tab col s3"><a target="_self" href="{% url 'my_notifications' %}"><i class="material-icons">notifications</i>My Updates</a></li>
-                            <li class="tab col s3"><a target="_self" href="{% url 'logout' %}">Log Out</a></li>
-                        {%  else %}
-                            <li class="tab col s3"><a target="_self" href="{% url 'register' %}">Register</a></li>
-                            <li class="tab col s3"><a target="_self" href="{% url 'login' %}">Log In</a></li>
-                        {% endif %}
-                            <li class="tab col s3">
-                                <a target="_self" href="{% url 'view_cart' %}">
-                                    <i class="material-icons">shopping_cart</i><span>Cart</span>
-                                    {% if issue_upvote_count > 0 %}
-                                    <label>{{ issue_upvote_count }}</label>
-                                    {% endif %}
-                                </a>
-                            </li> -->
                     </ul>
             </div>
         </nav>
