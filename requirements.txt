@@ -16,7 +16,7 @@ command-not-found==0.3
 configobj==5.0.6
 constantly==15.1.0
 coverage==4.5.2
-cryptography==2.1.4
+cryptography==2.3
 distro-info===0.18ubuntu0.18.04.1
 dj-database-url==0.5.0
 Django==2.0.7
@@ -79,8 +79,8 @@ python-debian==0.1.32
 python-dotenv==0.9.1
 python-editor==1.0.3
 pytz==2018.5
-pyxdg==0.25
-PyYAML==3.13
+pyxdg==0.26
+PyYAML==4.2b1
 requests==2.19.1
 requests-unixsocket==0.1.5
 roman==2.0.0
@@ -94,7 +94,7 @@ ssh-import-id==5.7
 stevedore==1.30.1
 stripe==2.3.0
 systemd-python==234
-Twisted==17.9.0
+twisted==19.7.0
 ufw==0.36
 unattended-upgrades==0.1
 urllib3==1.23
