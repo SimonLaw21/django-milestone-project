@@ -30,9 +30,11 @@ The features of the app are simple and easy to use:
 2. Filter issues by either bugs or features.
 3. Add new issues.
 4. Edit existing issues.
-5. Delete existing issues that logged in user owns.
-6. Allow admin access to change and update status of issues.
-7. View the status of all existing issues in a dashboard.
+5. Search through existing issues manually, or with keyword search function.
+6. Buy "Upvotes" for issues to give them priority.
+7. Delete existing issues that you own.
+8. Allow admin access to change and update status of issues.
+9. View the status of all existing issues in a dashboard.
 
 
 ## Technologies Used
