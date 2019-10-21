@@ -2,7 +2,7 @@
 
 # Issue tracker
 
-Mission statement for project: "Create a web application that allows users to add and edit/store bugs and features requests for a piece of software.""
+Mission statement for project: "Create a web application that allows users to add and edit/store bugs and features requests for a piece of software."
 
 ## Project guidelines
 
@@ -43,7 +43,7 @@ In this section, you should mention all of the languages, frameworks, libraries,
 
 - [Materialize](https://materializecss.com/)
     - The project uses **Materialize** to simplify DOM manipulation, and provide structural and styling templates.
-- [AWS](https://aws.amazon.com/)
+- [MongoDB](https://cloud.mongodb.com)
     - This project uses **MongoDB** to create and manage the database used to store the recipe information.
 - [Cloud9](https://c9.io/)
     - This project was written with and terminalised through **Cloud9**, to host the code files and use the bash console asa command line interface(CLI)
